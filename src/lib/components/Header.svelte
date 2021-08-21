@@ -12,6 +12,7 @@
   nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   nav > a {
@@ -31,7 +32,7 @@
     display: inline-flex;
     background-color: royalblue;
     color: #fff;
-    padding: 0.5rem 1.5rem;
+    padding: 0.625rem 1.5rem;
     border-radius: 0.375rem;
     font-weight: 700;
   }
