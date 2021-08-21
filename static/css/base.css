@@ -1,0 +1,23 @@
+:root {
+	--color-background: #fed;
+	--color-text: #345;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+	background-color: var(--color-background);
+	color: var(--color-text);
+  font-family: 'Cabin', sans-serif;
+  font-weight: 300;
+}
+
+/* @media screen and (prefers-color-scheme: dark) {
+	:root {
+		--color-background: #234;
+		--color-text: #fed;
+	}
+} */
