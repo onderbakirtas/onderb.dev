@@ -16,7 +16,7 @@ import Paragraph from "$lib/components/Paragraph.svelte";
 <style>
   h1 {
     font-family: 'DM Serif Text', serif;
-    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 3.5vw, 2.125rem);
     font-weight: 700;
   }
 </style>
