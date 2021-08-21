@@ -1,15 +1,22 @@
 <script>
 	import { quotes } from '$lib/data/quotes';
+	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
 
+	let quote = null;
 	const randomizer = parseInt(Math.random() * quotes.length);
 
-	const quote = quotes[randomizer];
+	onMount(() => {
+		quote = quotes[randomizer];
+	});
 </script>
 
-<footer>
-	<q>{quote.body}</q>
-	<cite>– {quote.author}</cite>
-</footer>
+{#if quote}
+	<footer in:fade>
+		<q>{quote.body}</q>
+		<cite>– {quote.author}</cite>
+	</footer>
+{/if}
 
 <style>
 	footer {
