@@ -15,11 +15,27 @@ export const quotes = [
 	},
 	{
 		body:
-			'If debugging is the process of removing software bugs, then programming must be the process of putting them in',
+			'If debugging is the process of removing software bugs, then programming must be the process of putting them in.',
 		author: 'Edsger Dijkstra'
 	},
 	{
 		body: 'If you think math is hard, try web design.',
 		author: 'Trish Parr'
+	},
+	{
+		body: 'I don’t care if it works on your machine! We are not shipping your machine!',
+		author: 'Vidiu Platon'
+	},
+	{
+		body: 'Measuring programming progress by lines of code is like measuring aircraft building progress by weight.',
+		author: 'Bill Gates'
+	},
+	{
+		body: 'Things aren’t always #000000 and #FFFFFF.',
+		author: 'HTML Proverb'
+	},
+	{
+		body: 'Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.',
+		author: 'Martin Golding'
 	}
 ];
