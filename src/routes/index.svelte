@@ -135,8 +135,14 @@
 		height: 3rem;
 		border-radius: 0.5rem;
 		color: var(--color-text);
-		transition: 0.125s;
+		transition: color 0.125s, opacity 0.05s;
+    opacity: 0.75;
 	}
+
+  
+	ul > li > a:hover {
+    opacity: 1;
+  }
 
 	ul > li > a :global(svg) {
 		height: 2.25rem;
