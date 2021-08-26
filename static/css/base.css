@@ -1,6 +1,7 @@
 :root {
 	--color-background: #eef;
 	--color-text: #345;
+	--color-button: #ccd;
 }
 
 html, body {

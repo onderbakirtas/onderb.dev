@@ -1,4 +1,5 @@
 <script>
+	import Icon from '$lib/components/Icon.svelte';
 	import Link from '$lib/components/Link.svelte';
 	import Paragraph from '$lib/components/Paragraph.svelte';
 </script>
@@ -8,10 +9,14 @@
 		<img src="/onderbakirtas.jpg" alt="Önder Bakırtaş" />
 		<ul>
 			<li>
-				<a href="https://github.com/onderbakirtas">GitHub</a>
+				<a href="https://github.com/onderbakirtas">
+					<Icon name="github" />
+				</a>
 			</li>
 			<li>
-				<a href="https://twitter.com/onderbakirtas">Twitter</a>
+				<a href="https://twitter.com/onderbakirtas">
+          <Icon name="twitter" />
+        </a>
 			</li>
 			<li>
 				<a href="https://linkedin.com/in/onderbakirtas">LinkedIn</a>
@@ -66,11 +71,31 @@
 		padding-right: 2rem;
 	}
 
-  ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+	ul {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		flex-flow: row wrap;
+	}
+
+	li {
+		flex: 0 0 25%;
+	}
+
+  ul > li > a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    color: var(--color-text);
+  }
+
+  ul > li > a :global(svg) {
+    height: 2rem;
+    width: 2rem;
   }
 
 	img {
