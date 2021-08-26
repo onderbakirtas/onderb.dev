@@ -2,34 +2,56 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import Link from '$lib/components/Link.svelte';
 	import Paragraph from '$lib/components/Paragraph.svelte';
+
+	let hoveredColor = 'var(--color-text)';
+
+	const handleHoverColor = (name) => {
+		hoveredColor = connections.find((el) => el.name === name).color;
+	};
+
+	const unsetHoverColor = () => (hoveredColor = 'var(--color-text)');
+
+	const connections = [
+		{
+			name: 'linkedin',
+			url: 'https://linkedin.com/in/onderbakirtas',
+			color: '#0077b5'
+		},
+		{
+			name: 'github',
+			url: 'https://github.com/onderbakirtas',
+			color: '#6e5494'
+		},
+		{
+			name: 'twitter',
+			url: 'https://twitter.com/onderbakirtas',
+			color: '#1da1f2'
+		},
+		{
+			name: 'email',
+			url: 'mailto:onderbakirtas@gmail.com',
+			color: '#dd4b39'
+		}
+	];
 </script>
 
 <main>
 	<aside>
 		<img src="/onderbakirtas.jpg" alt="Önder Bakırtaş" />
+		<span id="username" style={`color: ${hoveredColor}`}>onderbakirtas</span>
 		<ul>
-			<li>
-				<a href="https://github.com/onderbakirtas" id="github">
-					<Icon name="github" />
-				</a>
-			</li>
-			<li>
-				<a href="https://twitter.com/onderbakirtas" id="twitter">
-					<Icon name="twitter" />
-				</a>
-			</li>
-			<li>
-				<a href="https://linkedin.com/in/onderbakirtas" id="linkedin">
-					<Icon name="linkedin" />
-				</a>
-			</li>
-			<li>
-				<a href="mailto:onderbakirtas@gmail.com" id="email">
-					<Icon name="email" />
-				</a>
-			</li>
+			{#each connections as connection, i}
+				<li
+					on:mouseover={() => handleHoverColor(connection.name)}
+					on:focus={() => handleHoverColor(connection.name)}
+					on:mouseleave={unsetHoverColor}
+				>
+					<a href={connection.url} id={connection.name} target="_blank">
+						<Icon name={connection.name} />
+					</a>
+				</li>
+			{/each}
 		</ul>
-		<span id="username">onderbakirtas</span>
 	</aside>
 	<section>
 		<h1>Merhaba, ben <span>Önder Bakırtaş</span>.</h1>
@@ -78,16 +100,24 @@
 
 	#username {
 		display: flex;
-		background-color: var(--color-background);
-		height: 2rem;
+		/* background-color: var(--color-text); */
+		height: 2.5rem;
 		align-items: center;
 		justify-content: center;
 		font-size: clamp(1rem, 2vw, 1.25rem);
+    opacity: 1;
+    border-radius: 0.5rem;
+    color: var(--color-text);
+    margin: 0.5rem 0.25rem 0;
 	}
+
+  #username:hover {
+    opacity: 1;
+  }
 
 	ul {
 		display: flex;
-		margin: 1rem 0 0;
+		margin: 0.25rem 0 0;
 		padding: 0;
 		list-style: none;
 		flex-flow: row wrap;
@@ -105,7 +135,7 @@
 		height: 3rem;
 		border-radius: 0.5rem;
 		color: var(--color-text);
-    transition: 0.125s;
+		transition: 0.125s;
 	}
 
 	ul > li > a :global(svg) {
