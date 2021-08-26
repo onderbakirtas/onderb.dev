@@ -19,7 +19,9 @@
         </a>
 			</li>
 			<li>
-				<a href="https://linkedin.com/in/onderbakirtas">LinkedIn</a>
+				<a href="https://linkedin.com/in/onderbakirtas">
+          <Icon name="linkedin" />
+        </a>
 			</li>
 			<li>
 				<a href="mailto:onderbakirtas@gmail.com">E-posta</a>
