@@ -83,10 +83,10 @@
 
 <style>
 	h1 {
-		font-family: 'DM Serif Text', serif;
 		font-size: clamp(1.75rem, 3.5vw, 2.125rem);
 		font-weight: 700;
 		margin-top: 0;
+    margin-bottom: 0.8em;
 	}
 
 	main {
