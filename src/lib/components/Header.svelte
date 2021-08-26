@@ -20,8 +20,10 @@
   }
 
   nav > a#logotype {
-    font-size: 1.25rem;
-    color: royalblue;
+    font-size: 1.5rem;
+    letter-spacing: -0.05em;
+    color: var(--color-text);
+    font-family: 'Fonarto', sans-serif;
   }
 
   nav > a#logotype:hover {
