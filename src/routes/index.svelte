@@ -24,7 +24,9 @@
         </a>
 			</li>
 			<li>
-				<a href="mailto:onderbakirtas@gmail.com">E-posta</a>
+				<a href="mailto:onderbakirtas@gmail.com">
+          <Icon name="email" />
+        </a>
 			</li>
 		</ul>
 	</aside>
