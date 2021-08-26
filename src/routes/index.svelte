@@ -100,15 +100,13 @@
 
 	#username {
 		display: flex;
-		/* background-color: var(--color-text); */
 		height: 2.5rem;
 		align-items: center;
 		justify-content: center;
 		font-size: clamp(1rem, 2vw, 1.25rem);
     opacity: 1;
     border-radius: 0.5rem;
-    color: var(--color-text);
-    margin: 0.5rem 0.25rem 0;
+    margin-top: 0.5rem;
 	}
 
   #username:hover {
