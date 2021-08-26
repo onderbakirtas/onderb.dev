@@ -137,7 +137,6 @@
     opacity: 0.75;
 	}
 
-  
 	ul > li > a:hover {
     opacity: 1;
   }
