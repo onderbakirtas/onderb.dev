@@ -6,7 +6,7 @@
 
 <main>
 	<aside>
-    <img src="/onderbakirtas.jpg" alt="Önder Bakırtaş" />
+		<img src="/onderbakirtas.jpg" alt="Önder Bakırtaş" />
 		<ul>
 			<li>
 				<a href="https://github.com/onderbakirtas" id="github">
@@ -82,7 +82,7 @@
 		height: 2rem;
 		align-items: center;
 		justify-content: center;
-    font-size: clamp(1rem, 2vw, 1.25rem);
+		font-size: clamp(1rem, 2vw, 1.25rem);
 	}
 
 	ul {
@@ -105,11 +105,28 @@
 		height: 3rem;
 		border-radius: 0.5rem;
 		color: var(--color-text);
+    transition: 0.125s;
 	}
 
 	ul > li > a :global(svg) {
 		height: 2.25rem;
 		width: 2.25rem;
+	}
+
+	#github:hover {
+		color: #6e5494;
+	}
+
+	#twitter:hover {
+		color: #1da1f2;
+	}
+
+	#linkedin:hover {
+		color: #0077b5;
+	}
+
+	#email:hover {
+		color: #ea4335;
 	}
 
 	img {
