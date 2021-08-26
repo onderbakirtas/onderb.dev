@@ -98,8 +98,8 @@
   }
 
   ul > li > a :global(svg) {
-    height: 2rem;
-    width: 2rem;
+    height: 2.25rem;
+    width: 2.25rem;
   }
 
 	img {
