@@ -6,29 +6,30 @@
 
 <main>
 	<aside>
-		<img src="/onderbakirtas.jpg" alt="Önder Bakırtaş" />
+    <img src="/onderbakirtas.jpg" alt="Önder Bakırtaş" />
 		<ul>
 			<li>
-				<a href="https://github.com/onderbakirtas">
+				<a href="https://github.com/onderbakirtas" id="github">
 					<Icon name="github" />
 				</a>
 			</li>
 			<li>
-				<a href="https://twitter.com/onderbakirtas">
-          <Icon name="twitter" />
-        </a>
+				<a href="https://twitter.com/onderbakirtas" id="twitter">
+					<Icon name="twitter" />
+				</a>
 			</li>
 			<li>
-				<a href="https://linkedin.com/in/onderbakirtas">
-          <Icon name="linkedin" />
-        </a>
+				<a href="https://linkedin.com/in/onderbakirtas" id="linkedin">
+					<Icon name="linkedin" />
+				</a>
 			</li>
 			<li>
-				<a href="mailto:onderbakirtas@gmail.com">
-          <Icon name="email" />
-        </a>
+				<a href="mailto:onderbakirtas@gmail.com" id="email">
+					<Icon name="email" />
+				</a>
 			</li>
 		</ul>
+		<span id="username">onderbakirtas</span>
 	</aside>
 	<section>
 		<h1>Merhaba, ben <span>Önder Bakırtaş</span>.</h1>
@@ -75,9 +76,18 @@
 		padding-right: 2rem;
 	}
 
+	#username {
+		display: flex;
+		background-color: var(--color-background);
+		height: 2rem;
+		align-items: center;
+		justify-content: center;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+	}
+
 	ul {
 		display: flex;
-		margin: 0;
+		margin: 1rem 0 0;
 		padding: 0;
 		list-style: none;
 		flex-flow: row wrap;
@@ -87,20 +97,20 @@
 		flex: 0 0 25%;
 	}
 
-  ul > li > a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 0.5rem;
-    color: var(--color-text);
-  }
+	ul > li > a {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 0.5rem;
+		color: var(--color-text);
+	}
 
-  ul > li > a :global(svg) {
-    height: 2.25rem;
-    width: 2.25rem;
-  }
+	ul > li > a :global(svg) {
+		height: 2.25rem;
+		width: 2.25rem;
+	}
 
 	img {
 		border-radius: 50% / 50%;
