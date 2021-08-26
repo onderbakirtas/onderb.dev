@@ -14,7 +14,7 @@
 				<a href="https://twitter.com/onderbakirtas">Twitter</a>
 			</li>
 			<li>
-				<a href="https://linked.in/id/onderbakirtas">LinkedIn</a>
+				<a href="https://linkedin.com/in/onderbakirtas">LinkedIn</a>
 			</li>
 			<li>
 				<a href="mailto:onderbakirtas@gmail.com">E-posta</a>
@@ -65,6 +65,13 @@
 	aside {
 		padding-right: 2rem;
 	}
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
 	img {
 		border-radius: 50% / 50%;
