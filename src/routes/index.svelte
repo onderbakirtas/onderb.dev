@@ -54,5 +54,7 @@
     border-radius: 50% / 50%;
     width: 12.5rem;
     height: 12.5rem;
+    display: inline-block;
+    box-shadow: 0 0 0 4px var(--color-background), 0 0 0 6px #dde
   }
 </style>
