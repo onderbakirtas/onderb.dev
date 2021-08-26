@@ -13,6 +13,25 @@
 	font-display: swap;
 }
 
+@font-face {
+    font-family: 'Cabin';
+    src: url('/fonts/Cabin-Bold.woff2') format('woff2'),
+        url('/fonts/Cabin-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cabin';
+    src: url('/fonts/Cabin-Regular.woff2') format('woff2'),
+        url('/fonts/Cabin-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 html, body {
   height: 100%;
 }
@@ -21,8 +40,8 @@ body {
   margin: 0;
 	background-color: var(--color-background);
 	color: var(--color-text);
-  font-family: 'Cabin', sans-serif;
   font-weight: 300;
+	font-family: 'Cabin', sans-serif;
 }
 
 /* @media screen and (prefers-color-scheme: dark) {
