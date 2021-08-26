@@ -86,17 +86,25 @@
 		font-size: clamp(1.75rem, 3.5vw, 2.125rem);
 		font-weight: 700;
 		margin-top: 0;
-    margin-bottom: 0.8em;
+		margin-bottom: 0.8em;
 	}
 
 	main {
 		display: flex;
+		flex-direction: column;
 		margin-top: 2rem;
 	}
 
 	aside {
 		padding-right: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
+
+  section {
+    margin-top: 2rem;
+  }
 
 	#username {
 		display: flex;
@@ -104,14 +112,14 @@
 		align-items: center;
 		justify-content: center;
 		font-size: clamp(1rem, 2vw, 1.25rem);
-    opacity: 1;
-    border-radius: 0.5rem;
-    margin-top: 0.5rem;
+		opacity: 1;
+		border-radius: 0.5rem;
+		margin-top: 0.5rem;
 	}
 
-  #username:hover {
-    opacity: 1;
-  }
+	#username:hover {
+		opacity: 1;
+	}
 
 	ul {
 		display: flex;
@@ -134,12 +142,12 @@
 		border-radius: 0.5rem;
 		color: var(--color-text);
 		transition: color 0.125s, opacity 0.05s;
-    opacity: 0.75;
+		opacity: 0.75;
 	}
 
 	ul > li > a:hover {
-    opacity: 1;
-  }
+		opacity: 1;
+	}
 
 	ul > li > a :global(svg) {
 		height: 2.25rem;
@@ -164,9 +172,24 @@
 
 	img {
 		border-radius: 50% / 50%;
-		width: 12.5rem;
-		height: 12.5rem;
+    width: 10rem;
+    height: 10rem;
 		display: inline-block;
 		box-shadow: 0 0 0 4px var(--color-background), 0 0 0 6px #dde;
+	}
+
+	@media screen and (min-width: 48rem) {
+		main {
+			flex-direction: row;
+		}
+
+		img {
+			width: 12.5rem;
+			height: 12.5rem;
+		}
+
+    section {
+      margin-top: 0;
+    }
 	}
 </style>
