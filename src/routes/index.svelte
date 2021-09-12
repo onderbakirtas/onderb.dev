@@ -71,7 +71,7 @@
 			ve <Link href="https://svelte.dev" text="Svelte" /> frameworklerini aktif olarak kullanıyorum.
 			<Link href="https://reactnative.dev/" text="React Native" /> ile mobil uygulamalar geliştiriyorum.
 			Kişisel projelerimde ve küçük çaptaki kurumsal işlerde NodeJS (kimi zaman PHP) ile backend uygulamaları
-			hazırlıyorum. Serverless mimarisine ilgi duyuyorum.</Paragraph
+			hazırlıyorum.</Paragraph
 		>
 		<Paragraph
 			>Half-Life dünyasını -ki geliştirici olmamda başlangıç noktasıdır- çok seviyorum. Futbol
