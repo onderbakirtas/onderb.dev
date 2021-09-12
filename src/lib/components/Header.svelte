@@ -1,6 +1,7 @@
 <header>
+	<a href="/" id="logotype"><span>onderb</span>.dev</a>
 	<nav>
-		<a href="/" id="logotype"><span>onderb</span>.dev</a>
+		<a href="/blog">Blog</a>
 		<a href="mailto:onderb.dev@gmail.com" target="email" id="contact">Bana Yazın</a>
 	</nav>
 </header>
@@ -8,46 +9,61 @@
 <style>
 	header {
 		padding: 1rem 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
+
+	a {
+		text-decoration: none;
+	}
+
 	nav {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
 	}
 
 	nav > a {
-		text-decoration: none;
+		margin-left: 0.5rem;
+		height: 2.75rem;
+		padding: 0 1.25rem;
+		display: inline-flex;
+		align-items: center;
+		color: var(--color-text);
+		border-radius: 0.375rem;
+		box-sizing: border-box;
+	}
+	
+	nav > a:hover {
+		transition: 0.125s;
+		color: #012;
+		background-color: rgba(51, 68, 85, 0.15);
 	}
 
-	nav > a#logotype {
+	#logotype {
 		font-size: 1.5rem;
 		letter-spacing: -0.05em;
 		color: var(--color-text);
 		font-family: 'Fonarto', sans-serif;
 	}
 
-  nav > a#logotype > span {
-    opacity: 0.8;
-  }
-
-	nav > a#logotype:hover > span {
+	#logotype > span {
 		color: royalblue;
-    opacity: 1;
 	}
 
-	nav > a#contact {
-		display: inline-flex;
-		background-color: royalblue;
-		color: #fff;
-		padding: 0.625rem 1.5rem;
-		border-radius: 0.375rem;
+	#logotype:hover > span {
+		color: slategray;
+	}
+
+	#contact {
+		background-color: transparent;
+		color: royalblue;
 		font-weight: 700;
+		border: 2px solid royalblue;
 	}
 
-	nav > a#contact:hover {
-		transition: 0.15s;
-		background: transparent;
-		outline: 1px solid royalblue;
-		color: royalblue;
+	#contact:hover {
+		background: royalblue;
+		color: var(--color-background);
 	}
 </style>
