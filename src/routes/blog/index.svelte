@@ -1,6 +1,4 @@
 <script context="module">
-	import { extractUrl } from '$lib/helpers/extract-url';
-
 	/** @type {import('@sveltejs/kit').Load} */
 	export const load = async ({ fetch }) => {
 		const url = './blog.json';
