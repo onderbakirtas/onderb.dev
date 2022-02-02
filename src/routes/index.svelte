@@ -50,7 +50,7 @@
 					on:focus={() => handleHoverColor(connection.name)}
 					on:mouseleave={unsetHoverColor}
 				>
-					<a href={connection.url} id={connection.name} target="_blank" title={connection.title}>
+					<a href={connection.url} id={connection.name} target="_blank" aria-label={connection.title}>
 						<Icon name={connection.name} />
 					</a>
 				</li>
