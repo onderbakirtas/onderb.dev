@@ -15,22 +15,26 @@
 		{
 			name: 'linkedin',
 			url: 'https://linkedin.com/in/onderbakirtas',
-			color: '#0077b5'
+			color: '#0077b5',
+                        title: 'LinkedIn Profilim'
 		},
 		{
 			name: 'github',
 			url: 'https://github.com/onderbakirtas',
-			color: '#6e5494'
+			color: '#6e5494',
+                        title: 'GitHub Profilim'
 		},
 		{
 			name: 'twitter',
 			url: 'https://twitter.com/onderbakirtas',
-			color: '#1da1f2'
+			color: '#1da1f2',
+                        title: 'Twitter Profilim'
 		},
 		{
 			name: 'email',
 			url: 'mailto:onderbakirtas@gmail.com',
-			color: '#dd4b39'
+			color: '#dd4b39',
+                        title: 'Eposta Adresim'
 		}
 	];
 </script>
@@ -46,7 +50,7 @@
 					on:focus={() => handleHoverColor(connection.name)}
 					on:mouseleave={unsetHoverColor}
 				>
-					<a href={connection.url} id={connection.name} target="_blank">
+					<a href={connection.url} id={connection.name} target="_blank" title={connection.title}>
 						<Icon name={connection.name} />
 					</a>
 				</li>
