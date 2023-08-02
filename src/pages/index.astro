@@ -1,15 +1,58 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import logoWhite from "../assets/images/logo-300.svg";
+import logoInitials from "../assets/images/ob-logo-light.png";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+  <h1>
+    <!-- <img src={logoWhite.src} class="logo" alt="Önder Bakırtaş logo" /> -->
+    <img src={logoInitials.src} class="logo" alt="Önder Bakırtaş logo" />
+    <span>Önder Bakırtaş</span>
+  </h1>
+
+  <p>
+    Merhaba, ben <strong>Önder Bakırtaş</strong>. Kişisel sitemi yenileme kararı
+    aldım. Bu süreçte siteyi biraz daha sade ve açıklayıcı hâle getirmek
+    istedim. Kısa bir süre sonra (soon&trade;) yayına almayı planlıyorum.
+    Uğradığınız için teşekkür ederim.
+  </p>
+
+  <button>Bana iyi şanslar dile</button>
+</BaseLayout>
+
+<style>
+  h1 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    line-height: 2rem;
+    text-indent: -9999px;
+    padding-top: 8rem;
+  }
+
+  .logo {
+    height: 2.5rem;
+    margin: 0 auto;
+  }
+
+  p {
+    margin: 3rem 0 0;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+  button {
+    margin-top: 3rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid #fff;
+    border-radius: 0.25rem;
+    background: #ff6507;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+</style>
