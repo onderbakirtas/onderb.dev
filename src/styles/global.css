@@ -1,0 +1,31 @@
+:root {
+  font-family: 'Outfit Variable', sans-serif;
+
+  --background: #fff;
+  --text: #212121;
+  --theme: #ff6000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #212121;
+    --text: #fff;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  text-rendering: optimizeSpeed;
+  margin: 0;
+}
+
+button, input, textarea {
+  font-family: inherit;
+}
+
+.site {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
