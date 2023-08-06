@@ -19,6 +19,10 @@ body {
   margin: 0;
 }
 
+button, input, textarea {
+  font-family: inherit;
+}
+
 .site {
   max-width: 42rem;
   margin: 0 auto;
