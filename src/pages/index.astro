@@ -22,14 +22,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   const wished = localStorage.getItem("wished");
   const wishButton = document.querySelector("#wish");
 
-  if (wished === "true") {
+  function handleWish() {
     wishButton.classList.add("wished");
     wishButton.innerText = "Teşekkür ederim";
   }
 
-  wishButton.addEventListener("click", () => {
-    localStorage.setItem("wished", "true");
-  });
+  if (wished === "true") {
+    handleWish();
+  } else {
+    wishButton.addEventListener("click", () => {
+      localStorage.setItem("wished", "true");
+      handleWish();
+    });
+  }
 </script>
 
 <style>
