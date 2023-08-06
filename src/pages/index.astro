@@ -15,8 +15,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     Uğradığınız için teşekkür ederim.
   </p>
 
-  <button>Bana iyi şanslar dile</button>
+  <button id="wish">Bana iyi şanslar dile</button>
 </BaseLayout>
+
+<script>
+  const wished = localStorage.getItem("wished");
+  const wishButton = document.querySelector("#wish");
+
+  if (wished === "true") {
+    wishButton.classList.add("wished");
+    wishButton.innerText = "Teşekkür ederim";
+  }
+
+  wishButton.addEventListener("click", () => {
+    localStorage.setItem("wished", "true");
+  });
+</script>
 
 <style>
   h1 {
@@ -35,7 +49,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     font-weight: 300;
   }
 
-  button {
+  #wish {
     margin-top: 3rem;
     padding: 1rem 2rem;
     border: none;
@@ -47,5 +61,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+  }
+
+  #wish.wished {
+    opacity: 0.61;
+    pointer-events: none;
   }
 </style>
